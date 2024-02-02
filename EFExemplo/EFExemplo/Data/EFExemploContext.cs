@@ -13,6 +13,7 @@ namespace EFExemplo.Data
         {
             modelBuilder.Entity<Cliente>().ToTable("Cliente");
         }
+        public DbSet<EFExemplo.Models.Produto> Produto { get; set; } = default!;
 
 
     }
